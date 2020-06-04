@@ -1,0 +1,14 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+
+  &_item {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    width: 40%;
+
+    margin: 0.75rem;
+  }
+}

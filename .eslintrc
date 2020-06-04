@@ -1,0 +1,46 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["react-hooks", "prettier"],
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
+  "env": {
+    "es6": true
+  },
+  "rules": {
+    "prettier/prettier": ["error"],
+    "linebreak-style": ["error", "unix"],
+    "strict": "off",
+    "no-unused-vars": "warn",
+    "no-nested-ternary": "off",
+    "no-useless-constructor": "off",
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/jsx-props-no-spreading": ["off"],
+    "react/static-property-placement": ["off"],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "import/prefer-default-export": "off",
+    "react/state-in-constructor": "off",
+    "react/prop-types": "off",
+    "no-console": "warn",
+    "react/destructuring-assignment": [0],
+    "react/button-has-type": [0],
+    "react/require-default-props": [1],
+    "react/forbid-prop-types": ["warn"],
+    "global-require": "warn"
+  },
+  "globals": {
+    "document": true,
+    "localStorage": true
+  }
+}
